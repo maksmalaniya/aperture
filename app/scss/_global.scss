@@ -20,3 +20,9 @@
 .header-wrapper {
     background: $black-header;
 }
+
+.aperture-wrapper {
+    min-height: 100vh;
+    background: url('../images/bg1.jpg') no-repeat 50%/ cover;
+    position: relative;
+}
