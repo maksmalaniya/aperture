@@ -1,0 +1,37 @@
+.clients {
+    font-family: 'Poppins';
+    text-align: center;
+
+    &__title {
+        font-size: 42px;
+        color: $white;
+        padding-top: 113px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        color: $font-color;
+        margin-top: 15px;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            margin-top: 111px;
+            padding-bottom: 140px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__icon {
+        max-width: 128px;
+    }
+}
