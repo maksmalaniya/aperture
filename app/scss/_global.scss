@@ -1,0 +1,22 @@
+.container {
+    margin: 0 auto;
+    max-width: 567px;
+    padding: 0 30px 0 30px;
+    @media (min-width: $breakpoint-md) {
+        max-width: 970px;
+    }
+    @media (min-width: $breakpoint-lg) {
+        max-width: 1170px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        padding: 0;
+    }
+}
+
+.wrapper {
+    background: $black;
+}
+
+.header-wrapper {
+    background: $black-header;
+}
