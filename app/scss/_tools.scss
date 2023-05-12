@@ -1,0 +1,90 @@
+.tools {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    padding-top: 50px;
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    &__textcontent {
+        flex: 1 1 50%;
+        font-family: 'Poppins';
+        justify-content: center;
+        align-self: center;
+        padding: 0 106px 0 100px;
+    }
+
+    &__subtitle {
+        color: $font-color;
+        font-size: 14px;
+    }
+
+    &__title {
+        font-size: 28px;
+        color: $white;
+        margin-top: 6px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: $white;
+        line-height: 20px;
+        margin-top: 14px;
+        max-width: 514px;
+    }
+
+    &__btn-link {
+        display: inline-block;
+        text-decoration: none;
+        color: $black;
+        font-family: 'Poppins';
+        font-size: 20px;
+        background: $white;
+        padding: 9px 10px 13px 42px;
+        border-radius: 14px;
+        position: relative;
+        margin-top: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+            width: 30px;
+            height: 30px;
+            background: $black;
+            border-radius: 10px;
+        }
+    }
+
+    &__image-content {
+        background: url('../images/tools.jpg') no-repeat 50%/ cover;
+        flex: 1 1 50%;
+        position: relative;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 16px;
+        position: absolute;
+        bottom: 41px;
+        right: 40px;
+    }
+
+    &__list-item {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__list-text {
+        color: $white;
+        font-family: 'Poppins';
+    }
+}
