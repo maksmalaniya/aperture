@@ -1,0 +1,47 @@
+.mount {
+
+    &__content {
+        max-width: 298px;
+        position: absolute;
+        top: 50%;
+        right: 62px;
+        transform: translateY(-50%);
+    }
+
+    &__title {
+        font-size: 14px;
+        font-family: 'Poppins';
+        color: $white;
+    }
+
+    &__subtitle {
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: 'Poppins';
+        line-height: 20px;
+        color: $font-color;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 16px;
+        position: absolute;
+        bottom: 41px;
+        right: 40px;
+    }
+
+    &__list-item {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__list-text {
+        color: $white;
+        font-family: 'Poppins';
+    }
+}
