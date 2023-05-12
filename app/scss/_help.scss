@@ -1,0 +1,56 @@
+.help {
+    text-align: center;
+    font-family: 'Poppins';
+
+    // .help__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 42px;
+        color: $white;
+        padding-top: 113px;
+        max-width: 571px;
+        margin: 0 auto;
+    }
+
+    // .help__subtitle
+
+    &__subtitle {
+        margin-top: 15px;
+        color: $font-color;
+        font-size: 24px;
+    }
+
+    // .help__btn
+
+    &__btn {
+        padding-bottom: 108px;
+    }
+
+    // .help__link
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $black;
+        font-family: 'Poppins';
+        font-size: 20px;
+        background: $white;
+        padding: 9px 10px 13px 42px;
+        border-radius: 14px;
+        position: relative;
+        margin-top: 22px;
+        //margin-bottom: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+            width: 30px;
+            height: 30px;
+            background: $black;
+            border-radius: 10px;
+        }
+    }
+}
