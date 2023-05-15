@@ -123,25 +123,35 @@
         &__middle-subscribe-inp{
             position: relative;
             background: $white;
-            width: 458px;
-            height: 52px;
+            width: 200px;
+            height: 25px;
             border-radius: 12px;
             outline: unset;
             border: none;
             padding: 11px 6px;
+            @media (min-width: $breakpoint-lg) {
+                width: 458px;
+                height: 52px;
+            }
         }
 
         &__middle-subscribe-custom-input {
             position: relative;
             &::before {
                 position: absolute;
-                top: -5px;
-                right: 12px;
+                top: 2px;
+                right: 8px;
                 content: '';
-                width: 63px;
-                height: 30px;
+                width: 32px;
+                height: 15px;
                 border-radius: 11px;
                 background: $black;
+                @media (min-width: $breakpoint-lg) {
+                    top: -5px;
+                    right: 12px;
+                    width: 63px;
+                    height: 30px;
+                }
             }
         }
 
